@@ -1,4 +1,4 @@
-# Object-Oriented Programming (OOP) — Interview Prep — Senior Java Developer (8+ YOE)
+# Object-Oriented Programming (OOP) — Interview Prep — Senior Java Developer
 
 ---
 

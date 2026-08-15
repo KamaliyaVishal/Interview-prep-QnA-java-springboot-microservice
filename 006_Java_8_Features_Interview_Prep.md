@@ -1,4 +1,4 @@
-# 6. Java 8 Features — Interview Prep — Senior Java Developer (8+ YOE)
+# 6. Java 8 Features — Interview Prep — Senior Java Developer
 
 *Covers: Lambda Expressions, Functional Interfaces, Stream API, Optional, Method References, Default/Static Interface Methods, Date/Time API.*
 
@@ -933,7 +933,7 @@ cache.merge(key, 1, Integer::sum);   // atomic increment pattern
 
 *End of Java 8 Features Interview Prep — Topic 6*
 
-# SENIOR 8+ YOE EXPANSION — STREAMS, OPTIONAL & COMPLETABLEFUTURE
+# SENIOR EXPANSION — STREAMS, OPTIONAL & COMPLETABLEFUTURE
 
 > The original Java 8 module is preserved above. This section adds execution-model reasoning, performance trade-offs, custom collector concepts, async composition, and production interview scenarios.
 

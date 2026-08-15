@@ -1,4 +1,4 @@
-# 010. Design Patterns — Interview Questions & Answers — Senior Java Developer (8+ YOE)
+# 010. Design Patterns — Interview Questions & Answers — Senior Java Developer
 
 **Focus:** Creational, Structural, Behavioral design patterns; what problem each solves, when to use/not use, Java/Spring examples, trade-offs, interview traps, and production scenarios.
 
@@ -2491,7 +2491,7 @@ Each pattern solves a different problem:
 
 # FINAL TAKEAWAY
 
-For an **8+ YOE Java/Spring Boot interview**, do not memorize:
+For an **Experience Java/Spring Boot interview**, do not memorize:
 
 > "Singleton is Creational, Adapter is Structural, Strategy is Behavioral."
 

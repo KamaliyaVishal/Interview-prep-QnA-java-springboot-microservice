@@ -1,7 +1,6 @@
 # 📘 Java Full Stack Interview Prep — Master Index
 
 > 🔗 **GitHub:** [KamaliyaVishal/Interview_QA](https://github.com/KamaliyaVishal/Interview_QA)
-> 📁 **Local:** `D:\Vishal\Interview\prep\`
 > **Legend:** ✅ Complete · 🔲 Planned
 
 ---

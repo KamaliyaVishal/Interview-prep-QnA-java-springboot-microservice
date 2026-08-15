@@ -1,4 +1,4 @@
-# 006. Java I/O & NIO — Interview Questions & Answers — Senior Java Developer (8+ YOE)
+# 006. Java I/O & NIO — Interview Questions & Answers — Senior Java Developer
 
 **Focus:** Streams, Byte/Character/Buffered I/O, Serialization, `transient`, `Externalizable`, NIO Channels, Buffers, Selectors, `Path` & `Files`, file performance, resource management, and production scenarios.
 
@@ -1742,7 +1742,7 @@ NIO becomes particularly valuable when you need:
 
 ---
 
-# TOP 20 QUESTIONS TO PRIORITIZE FOR 8+ YOE INTERVIEWS
+# TOP 20 QUESTIONS TO PRIORITIZE
 
 1. **Byte stream vs Character stream**
 2. **InputStream vs Reader**
@@ -1779,7 +1779,7 @@ NIO becomes particularly valuable when you need:
 
 # FINAL INTERVIEW CHECKLIST
 
-Before an 8+ YOE Java interview, make sure you can explain these without memorizing definitions:
+Before an experience Java interview, make sure you can explain these without memorizing definitions:
 
 ### I/O
 - [ ] Byte vs character streams

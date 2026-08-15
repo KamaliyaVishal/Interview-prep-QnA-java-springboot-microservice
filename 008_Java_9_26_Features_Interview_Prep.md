@@ -1385,7 +1385,7 @@ The attached material uses the same overall progression and recommends focusing 
 
 **For your interview profile, the single most important topic from Java 9–26 is Java 21 Virtual Threads**, followed by **Records, Sealed Classes, Pattern Matching, HTTP Client, `var`, and modern Collections**. 
 
-# SENIOR 8+ YOE EXPANSION — JAVA 9–26 PRODUCTION & MIGRATION DEPTH
+# SENIOR EXPANSION — JAVA 9–26 PRODUCTION & MIGRATION DEPTH
 
 > The original Java 9–26 module is preserved above. This section adds the senior interview layer: runtime behavior, migration decisions, production pitfalls, and feature comparisons.
 

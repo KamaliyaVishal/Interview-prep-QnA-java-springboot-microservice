@@ -1,4 +1,4 @@
-# Core Java Fundamentals — Interview Prep — Senior Java Developer (8+ YOE)
+# Core Java Fundamentals — Interview Prep — Senior Java Developer
 
 ---
 

@@ -1,4 +1,4 @@
-# Collections Framework — Interview Prep — Senior Java Developer (8+ YOE)
+# Collections Framework — Interview Prep — Senior Java Developer
 
 ---
 
@@ -529,7 +529,7 @@ queue.poll();    // 1 — FIFO, queue-style
 
 *Study tip: HashMap internals (Q9-Q13) is asked in nearly every single senior Java interview and often gets 10-15 minutes of deep follow-up alone — be ready to draw the bucket array + collision chain + treeification diagram from memory. The equals()/hashCode() bug (Q23) and the fail-fast ConcurrentModificationException trap (Q21) are the two most common "write code that breaks, then explain why" live-coding exercises for this topic.*
 
-# SENIOR 8+ YOE EXPANSION — PRODUCTION & INTERNALS
+# SENIOR EXPANSION — PRODUCTION & INTERNALS
 
 > The original module is preserved above. This section adds senior-level reasoning, production scenarios, trade-offs, and interview follow-ups.
 

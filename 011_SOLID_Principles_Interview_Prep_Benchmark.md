@@ -1,4 +1,4 @@
-# 011. SOLID Principles — Interview Questions & Answers — Senior Java Developer (8+ YOE)
+# 011. SOLID Principles — Interview Questions & Answers — Senior Java Developer
 
 **Focus:** SRP, OCP, LSP, ISP, and the missing fifth SOLID principle—DIP—plus practical Java/Spring Boot examples, violations, refactoring approaches, trade-offs, and senior-level interview scenarios.
 
@@ -1622,6 +1622,6 @@ SOLID
   +-- DIP → Dependency Direction
 ```
 
-For an **8+ YOE Java/Spring Boot interview**, always connect the principle to:
+For an **Experience Java/Spring Boot interview**, always connect the principle to:
 
 **problem → design smell → refactoring → trade-off → production use case.**

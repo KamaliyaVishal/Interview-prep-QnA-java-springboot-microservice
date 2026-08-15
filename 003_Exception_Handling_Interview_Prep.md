@@ -1,5 +1,4 @@
-# Exception Handling — Interview Prep — Senior Java Developer (8+ YOE)
-
+# Exception Handling — Interview Prep — Senior Java Developer
 ---
 
 ## SECTION 1: CHECKED vs UNCHECKED EXCEPTIONS

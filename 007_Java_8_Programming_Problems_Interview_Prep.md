@@ -1,4 +1,4 @@
-# 7. Java 8 Programming Problems — Interview Prep — Senior Java Developer (7–10 YOE)
+# 7. Java 8 Programming Problems — Interview Prep — Senior Java Developer
 
 *Companion to `006_Java_8_Features_Interview_Prep.md`. Hands-on Stream/Optional/Comparator programs interviewers ask you to **write or explain on a whiteboard**.*
 
@@ -1052,7 +1052,7 @@ import java.util.stream.Collectors;
 
 *Study order: Master Section 4 (Top 10) first → then String programs (Q4, Q5, Q24, Q25) → then Array/List set operations → full Employee pipeline suite (Q10–Q20).*
 
-# SENIOR 8+ YOE EXPANSION — CODING PROBLEM DEPTH
+# SENIOR EXPANSION — CODING PROBLEM DEPTH
 
 > The original programming problems are preserved above. This section adds the interviewer's follow-up layer: optimal approach, complexity, edge cases, Java 8 implementation patterns, and production-oriented reasoning.
 

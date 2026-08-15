@@ -1,121 +1,200 @@
-# 📘 Java Full Stack Interview Prep — Master Index
+# Java Interview Preparation — Senior Java Developer (experienced)
 
-> 🔗 **GitHub:** [KamaliyaVishal/Interview_QA](https://github.com/KamaliyaVishal/Interview_QA)
-> **Legend:** ✅ Complete · 🔲 Planned
+This folder is organized in the recommended **learning sequence**, not merely by topic category.
+
+The progression is:
+
+> **Java fundamentals → Object-oriented design → Core language concepts → Core APIs → Concurrency → Java 8 → Modern Java → Design principles → Design patterns → Advanced Java APIs**
+
+## Recommended Learning Order
+
+| # | Module | Why Learn It Here |
+|---:|---|---|
+| 001 | Core Java Fundamentals | Foundation for every subsequent Java topic |
+| 002 | OOP | Establishes the object/design model used throughout Java |
+| 003 | String Immutability | Fundamental value-type, memory, pooling, and sharing concepts |
+| 004 | Generics | Required foundation for type-safe Collections and modern Java APIs |
+| 005 | Collections Framework | Core Java data structures and a major interview area |
+| 006 | Exception Handling | Robust error handling before deeper API/concurrency work |
+| 007 | Java I/O & NIO | Streams, files, buffers, channels, paths, and serialization foundations |
+| 008 | Multithreading & Concurrency | Threads, synchronization, executors, atomics, and concurrent collections |
+| 009 | Java 8 Features | Lambdas, Streams, Optional, collectors, and CompletableFuture |
+| 010 | Java 8 Programming Problems | Apply Collections, Streams, lambdas, and problem-solving techniques |
+| 011 | Java 9–26 Features | Modern Java evolution after the Java 8 foundation |
+| 012 | SOLID Principles | Design principles that explain how to structure maintainable systems |
+| 013 | Design Patterns | Reusable design solutions built on sound design principles |
+| 014 | Reflection & Serialization | Advanced Java APIs and framework/runtime concepts |
+
+## Learning Dependencies
+
+```text
+Core Java
+    ↓
+OOP
+    ↓
+String Immutability
+    ↓
+Generics
+    ↓
+Collections
+    ↓
+Exception Handling
+    ↓
+I/O & NIO
+    ↓
+Concurrency
+    ↓
+Java 8
+    ↓
+Java 8 Programming Problems
+    ↓
+Java 9–26
+    ↓
+SOLID
+    ↓
+Design Patterns
+    ↓
+Reflection & Serialization
+```
+
+### Important Concept Relationships
+
+```text
+OOP
+ ├──→ SOLID
+ │      └──→ Design Patterns
+ │
+ └──→ Generics
+        └──→ Collections
+               └──→ Java 8 Streams
+                      └──→ Java 8 Problems
+
+String Immutability
+ ├──→ Collections
+ ├──→ Concurrency
+ └──→ Design
+
+Exception Handling
+ ├──→ I/O & NIO
+ ├──→ Concurrency
+ └──→ CompletableFuture
+
+Java 8
+ └──→ Java 9–26
+
+I/O & NIO
+ └──→ Serialization
+
+Generics
+ └──→ Reflection / Type Metadata
+```
+
+## Interview Preparation Benchmark
+
+For each topic, aim to answer beyond a definition:
+
+> **What is it? → Why does it exist? → What problem does it solve? → How does it work? → Example → Trade-offs → When to use → When not to use → Production scenario → Interview trap → Senior follow-up**
+
+For an **experienced Senior Java / Spring Boot / Microservices** interview, prioritize understanding and trade-offs over memorizing definitions.
+
+## Suggested Study Method
+
+### Pass 1 — Understand
+
+Read each module in order and make sure you can explain the core concepts without looking at the answer.
+
+### Pass 2 — Interview
+
+For every major question, practice a **60–90 second spoken answer**.
+
+### Pass 3 — Senior Depth
+
+For important topics, be able to discuss:
+
+- Internal working
+- Performance implications
+- Memory behavior
+- Thread-safety
+- Failure modes
+- Trade-offs
+- Production use cases
+- Common mistakes
+- Alternatives
+
+### Pass 4 — Coding
+
+Use the Java 8 Programming Problems module after completing Java 8 Features.
+
+### Pass 5 — Design
+
+Study SOLID before Design Patterns so that patterns are understood as design tools rather than memorized templates.
 
 ---
 
-## MODULE 1 — CORE JAVA
+## Module Checklist
 
-| # | File | Topic | Q Count | Status |
-|---|---|---|---|---|
-| 01 | [001_Core_Java_Fundamentals_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/001_Core_Java_Fundamentals_Interview_Prep.md) | JVM · Memory · GC · ClassLoaders · Types · Pass-by-Value | 29 | ✅ |
-| 02 | [002_OOP_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/002_OOP_Interview_Prep.md) | Encapsulation · Inheritance · Polymorphism · Abstract · Cloning | 26 | ✅ |
-| 03 | [003_Exception_Handling_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/003_Exception_Handling_Interview_Prep.md) | Checked/Unchecked · try-catch · Custom · Chaining | 21 | ✅ |
-| 04 | [004_Collections_Framework_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_Collections_Framework_Interview_Prep.md) | List/Set/Map · HashMap Internals · Iterators · equals/hashCode | 32 | ✅ |
-| 05 | [005_Multithreading_and_Concurrency_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_Multithreading_and_Concurrency_Interview_Prep.md) | Threads · Locks · Executor · CompletableFuture · ThreadLocal · Fork/Join | 42 | ✅ |
-| 06 | [006_Java_8_Features_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/006_Java_8_Features_Interview_Prep.md) | Lambdas · Streams · Collectors · Optional · Method Refs · Date API | — | ✅ |
-| 07 | [007_Java_8_Programming_Problems_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/007_Java_8_Programming_Problems_Interview_Prep.md) | Stream coding problems · Lambda exercises | — | ✅ |
-| 08 | [008_Java_9_26_Features_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/008_Java_9_26_Features_Interview_Prep.md) | Records · Sealed · Pattern Matching · Modules · Text Blocks | — | ✅ |
-| 09 | [009_Java_IO_and_NIO_Interview_Prep.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/009_Java_IO_and_NIO_Interview_Prep.md) | IO Streams · NIO · Channels · Buffers · File API | — | ✅ |
-| 10 | [010_Design_Patterns_Interview_Prep_Benchmark.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/010_Design_Patterns_Interview_Prep_Benchmark.md) | Creational · Structural · Behavioral · Patterns in Spring | — | ✅ |
-| 11 | [011_SOLID_Principles_Interview_Prep_Benchmark.md](https://github.com/KamaliyaVishal/Interview_QA/blob/main/011_SOLID_Principles_Interview_Prep_Benchmark.md) | SRP · OCP · LSP · ISP · DIP · Real examples | — | ✅ |
-| 12 | 012_Generics_Interview_Prep.md | Type Erasure · Wildcards · PECS · Bounded Types | — | 🔲 |
-| 13 | 013_Reflection_Serialization_Interview_Prep.md | Reflection API · Serialization · serialVersionUID · transient | — | 🔲 |
-| 14 | 014_String_Immutability_Interview_Prep.md | String Pool · StringBuilder · Compact Strings | — | 🔲 |
+- [ ] 001 Core Java Fundamentals
+- [ ] 002 OOP
+- [ ] 003 String Immutability
+- [ ] 004 Generics
+- [ ] 005 Collections Framework
+- [ ] 006 Exception Handling
+- [ ] 007 Java I/O & NIO
+- [ ] 008 Multithreading & Concurrency
+- [ ] 009 Java 8 Features
+- [ ] 010 Java 8 Programming Problems
+- [ ] 011 Java 9–26 Features
+- [ ] 012 SOLID Principles
+- [ ] 013 Design Patterns
+- [ ] 014 Reflection & Serialization
 
----
+## Senior Interview Priority
 
-## MODULE 2 — SPRING BOOT
+For your target senior-level Java interviews, give extra attention to:
 
-| # | File | Topic | Status |
-|---|---|---|---|
-| 15 | 015_Spring_Core_Interview_Prep.md | IoC · DI · Bean Lifecycle · Scopes · Autowired | 🔲 |
-| 16 | 016_Spring_Boot_Interview_Prep.md | Auto-config · Starters · Profiles · Properties | 🔲 |
-| 17 | 017_Spring_MVC_Interview_Prep.md | REST APIs · Validation · Exception Handling | 🔲 |
-| 18 | 018_Spring_Security_Interview_Prep.md | JWT · OAuth2 · Security Filters | 🔲 |
-| 19 | 019_Hibernate_JPA_Interview_Prep.md | ORM · Caching · Transactions · N+1 Problem | 🔲 |
-| 20 | 020_Spring_AOP_Actuator_Interview_Prep.md | AOP · Actuator · Spring Cloud · Feign · Gateway | 🔲 |
-
----
-
-## MODULE 3 — MICROSERVICES
-
-| # | File | Topic | Status |
-|---|---|---|---|
-| 21 | 021_Microservices_Architecture_Interview_Prep.md | Design Principles · API Gateway · Service Discovery | 🔲 |
-| 22 | 022_Fault_Tolerance_Interview_Prep.md | Circuit Breaker · Bulkhead · Retry · Rate Limiting | 🔲 |
-| 23 | 023_Kafka_EventDriven_Interview_Prep.md | Kafka · RabbitMQ · Outbox · Exactly-Once · DLQ | 🔲 |
-| 24 | 024_Microservices_Patterns_Interview_Prep.md | Saga · CQRS · Idempotency · Event Ordering | 🔲 |
-| 25 | 025_Distributed_Logging_Tracing_Interview_Prep.md | ELK · Zipkin · Sleuth · Correlation IDs | 🔲 |
+1. Collections internals and concurrency
+2. Multithreading and Java Memory Model
+3. Streams and CompletableFuture
+4. Modern Java, especially Java 17/21/25-era features
+5. Immutability and thread-safe design
+6. SOLID and practical design patterns
+7. I/O/NIO and resource management
+8. Generics, type erasure, wildcards, and PECS
+9. Reflection and serialization trade-offs/security
+10. Production troubleshooting and performance reasoning
 
 ---
 
-## MODULE 4 — DATABASE
+## Final Roadmap
 
-| # | File | Topic | Status |
-|---|---|---|---|
-| 26 | 026_SQL_Advanced_Interview_Prep.md | Indexes · Joins · Window Functions · CTE · Execution Plan | 🔲 |
-| 27 | 027_DB_Transactions_Interview_Prep.md | Isolation Levels · Optimistic/Pessimistic Locking · ACID | 🔲 |
-| 28 | 028_DB_Performance_Interview_Prep.md | Partitioning · Normalization · Tuning | 🔲 |
+```text
+001 Core Java
+       ↓
+002 OOP
+       ↓
+003 String Immutability
+       ↓
+004 Generics
+       ↓
+005 Collections
+       ↓
+006 Exceptions
+       ↓
+007 I/O & NIO
+       ↓
+008 Concurrency
+       ↓
+009 Java 8
+       ↓
+010 Java 8 Problems
+       ↓
+011 Java 9–26
+       ↓
+012 SOLID
+       ↓
+013 Design Patterns
+       ↓
+014 Reflection & Serialization
+```
 
----
-
-## MODULE 5 — ANGULAR
-
-| # | File | Topic | Status |
-|---|---|---|---|
-| 29 | 029_Angular_Core_Interview_Prep.md | Components · Lifecycle · DI · Change Detection | 🔲 |
-| 30 | 030_Angular_RxJS_Interview_Prep.md | Observables · Subjects · Signals · Operators | 🔲 |
-| 31 | 031_Angular_Advanced_Interview_Prep.md | Routing · Lazy Loading · Forms · State Management | 🔲 |
-
----
-
-## MODULE 6 — SYSTEM DESIGN
-
-| # | File | Topic | Status |
-|---|---|---|---|
-| 32 | 032_System_Design_HLD_Interview_Prep.md | Scalability · Caching · Load Balancer · CDN · Rate Limiting | 🔲 |
-| 33 | 033_System_Design_LLD_Interview_Prep.md | SOLID · Design Patterns · API Design · DB Design | 🔲 |
-| 34 | 034_System_Design_Real_Systems_Interview_Prep.md | Uber · WhatsApp · Netflix · Payment · Order Management | 🔲 |
-
----
-
-## MODULE 7 — DEVOPS
-
-| # | File | Topic | Status |
-|---|---|---|---|
-| 35 | 035_Docker_Interview_Prep.md | Dockerfile · Docker Compose · Networking | 🔲 |
-| 36 | 036_Kubernetes_Interview_Prep.md | Pods · Deployments · Services · Ingress · ConfigMaps | 🔲 |
-| 37 | 037_CICD_AWS_Interview_Prep.md | Jenkins · GitHub Actions · EC2 · S3 · ECS · EKS | 🔲 |
-
----
-
-## MODULE 8 — BEHAVIORAL
-
-| # | File | Topic | Status |
-|---|---|---|---|
-| 38 | 038_Behavioral_Interview_Prep.md | STAR · Leadership · Conflict · Production Issues · Ownership | 🔲 |
-
----
-
-## 🔥 Must-Revise Before Any Interview
-
-| Priority | Question | File → Section |
-|---|---|---|
-| 🔴 | HashMap internal working — hashing, treeification, resize | [004](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_Collections_Framework_Interview_Prep.md) → §4 Q9 |
-| 🔴 | ThreadLocal leak in pooled threads | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_Multithreading_and_Concurrency_Interview_Prep.md) → §11 Q36 |
-| 🔴 | Why NOT to use `Executors` factory methods | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_Multithreading_and_Concurrency_Interview_Prep.md) → §6 Q18 |
-| 🔴 | Pass by value — swap method proof | [001](https://github.com/KamaliyaVishal/Interview_QA/blob/main/001_Core_Java_Fundamentals_Interview_Prep.md) → §6 Q26 |
-| 🔴 | equals()/hashCode() contract & HashSet identity bug | [004](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_Collections_Framework_Interview_Prep.md) → §9 Q23 |
-| 🔴 | Static/instance block + constructor execution order | [002](https://github.com/KamaliyaVishal/Interview_QA/blob/main/002_OOP_Interview_Prep.md) → §4 Q16 |
-| 🔴 | Exception chaining — never swallow the cause | [003](https://github.com/KamaliyaVishal/Interview_QA/blob/main/003_Exception_Handling_Interview_Prep.md) → §5 Q17 |
-| 🟠 | Static method hiding vs overriding output trap | [002](https://github.com/KamaliyaVishal/Interview_QA/blob/main/002_OOP_Interview_Prep.md) → §3 Q13 |
-| 🟠 | CompletableFuture silent exception swallow | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_Multithreading_and_Concurrency_Interview_Prep.md) → §7 Q23 |
-| 🟠 | Fail-fast ConcurrentModificationException fix | [004](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_Collections_Framework_Interview_Prep.md) → §8 Q21 |
-| 🟠 | Fork/Join work-stealing mechanism | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_Multithreading_and_Concurrency_Interview_Prep.md) → §12 Q42 |
-| 🟠 | LRU cache using LinkedHashMap | [004](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_Collections_Framework_Interview_Prep.md) → §6 Q17 |
-
----
-
-*Module 1: 11 of 14 files complete · Module 2–8: Planned*
+**Goal:** By the end of the sequence, you should be able to explain not only *what* a Java feature does, but also *why it exists, what problem it solves, how it behaves internally, what trade-offs it introduces, and where you would use it in a production system.*

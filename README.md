@@ -21,8 +21,6 @@
 | 013 | [Design Patterns](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD1_013_Design_Patterns_Interview_Prep.md) | Creational · Structural · Behavioral · Patterns in Spring |
 | 014 | [Reflection & Serialization](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD1_014_Reflection_Serialization_Interview_Prep.md) | Reflection API · Serialization · serialVersionUID · transient |
 
-**Module 1 status: 14 of 14 files complete.**
-
 ---
 
 ## MODULE 2 — SPRING 🔲

@@ -1,4 +1,4 @@
-# 006. Java I/O & NIO — Interview Questions & Answers — Senior Java Developer
+# 006. Java I/O & NIO — Interview Questions & Answers 
 
 **Focus:** Streams, Byte/Character/Buffered I/O, Serialization, `transient`, `Externalizable`, NIO Channels, Buffers, Selectors, `Path` & `Files`, file performance, resource management, and production scenarios.
 

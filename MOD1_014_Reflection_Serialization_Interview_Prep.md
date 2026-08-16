@@ -1,4 +1,4 @@
-# 013. Reflection & Serialization — Interview Preparation — Senior Java Developer (experienced)
+# 013. Reflection & Serialization — Interview Preparation
 
 **Focus:** Reflection API, runtime metadata, dynamic object creation/invocation, annotations, access control, performance/security trade-offs, Java Serialization, `Serializable`, `serialVersionUID`, `transient`, custom serialization hooks, `Externalizable`, compatibility, and deserialization security.
 

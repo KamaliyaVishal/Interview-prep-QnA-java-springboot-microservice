@@ -1,4 +1,4 @@
-# 009. Generics — Interview Preparation — Senior Java Developer (experienced)
+# 009. Generics — Interview Preparation  (experienced)
 
 **Topics:** Type Parameters & Bounds, Wildcards (`?`, `extends`, `super`), Type Erasure, PECS Principle
 

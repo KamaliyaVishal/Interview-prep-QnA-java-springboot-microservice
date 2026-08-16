@@ -1,4 +1,4 @@
-# 010. Design Patterns — Interview Questions & Answers — Senior Java Developer
+# 010. Design Patterns — Interview Questions & Answers 
 
 **Focus:** Creational, Structural, Behavioral design patterns; what problem each solves, when to use/not use, Java/Spring examples, trade-offs, interview traps, and production scenarios.
 

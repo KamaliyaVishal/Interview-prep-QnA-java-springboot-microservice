@@ -1,4 +1,4 @@
-# 6. Java 8 Features — Interview Prep — Senior Java Developer
+# 6. Java 8 Features — Interview Prep 
 
 *Covers: Lambda Expressions, Functional Interfaces, Stream API, Optional, Method References, Default/Static Interface Methods, Date/Time API.*
 

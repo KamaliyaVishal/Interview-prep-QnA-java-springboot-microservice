@@ -1,4 +1,4 @@
-# 011. SOLID Principles — Interview Questions & Answers — Senior Java Developer
+# 011. SOLID Principles — Interview Questions & Answers 
 
 **Focus:** SRP, OCP, LSP, ISP, and the missing fifth SOLID principle—DIP—plus practical Java/Spring Boot examples, violations, refactoring approaches, trade-offs, and senior-level interview scenarios.
 

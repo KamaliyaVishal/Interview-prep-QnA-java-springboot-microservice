@@ -1,4 +1,4 @@
-# Exception Handling — Interview Prep — Senior Java Developer
+# Exception Handling — Interview Prep 
 ---
 
 ## SECTION 1: CHECKED vs UNCHECKED EXCEPTIONS

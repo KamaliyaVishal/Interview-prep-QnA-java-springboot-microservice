@@ -1,4 +1,4 @@
-# Collections Framework — Interview Prep — Senior Java Developer
+# Collections Framework — Interview Prep 
 
 ---
 

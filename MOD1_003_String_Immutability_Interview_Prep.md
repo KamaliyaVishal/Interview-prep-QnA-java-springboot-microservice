@@ -1,4 +1,4 @@
-# 014. String Immutability — Interview Preparation — Senior Java Developer (experienced)
+# 014. String Immutability — Interview Preparation  (experienced)
 
 **Focus:** String immutability · String Pool · `==` vs `equals()` · `intern()` · `StringBuilder` · `StringBuffer` · concatenation · `final` vs immutable · Compact Strings · memory/performance · security · production scenarios
 

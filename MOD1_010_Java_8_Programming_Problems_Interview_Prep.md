@@ -1,4 +1,4 @@
-# 7. Java 8 Programming Problems — Interview Prep — Senior Java Developer
+# 7. Java 8 Programming Problems — Interview Prep 
 
 *Companion to `006_Java_8_Features_Interview_Prep.md`. Hands-on Stream/Optional/Comparator programs interviewers ask you to **write or explain on a whiteboard**.*
 

@@ -1,4 +1,4 @@
-# 5. Multithreading & Concurrency — Interview Prep — Senior Java Developer
+# 5. Multithreading & Concurrency — Interview Prep 
 
 *Note: This consolidates and reorganizes content from earlier multithreading prep into the curriculum's Topic 5 structure, with expanded depth on ThreadLocal and Fork/Join, which weren't previously covered.*
 

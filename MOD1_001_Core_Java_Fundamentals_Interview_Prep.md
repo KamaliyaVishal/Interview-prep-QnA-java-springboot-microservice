@@ -1,4 +1,4 @@
-# Core Java Fundamentals — Interview Prep — Senior Java Developer
+# Core Java Fundamentals — Interview Prep 
 
 ---
 

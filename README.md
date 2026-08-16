@@ -51,3 +51,14 @@
 | 005 | [Distributed Tracing](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD3_005_Distributed_Tracingj_Interview_Prep.md) | Sleuth · Zipkin · Correlation IDs · Distributed Logging |
 
 ---
+## 🏗️ MODULE 4 — MICROSERVICES ARCHITECTURE 🏗️
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [Microservices Fundamentals](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD4_001_Microservices_Fundamentals_Interview_Prep.md) | Microservices Architecture · Benefits · Challenges · Principles |
+| 002 | [Domain-Driven Design & Service Boundaries](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD4_002_Domain_Driven_Design_Service_Boundaries_Interview_Prep.md) | DDD · Bounded Contexts · Service Boundaries · Domain Modeling |
+| 003 | [Decomposition & Design Patterns](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD4_003_Decomposition_and_Design_Patterns_Interview_Prep.md) | Service Decomposition · Microservices Design Patterns |
+| 004 | [Service Communication](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD4_004_Service_Communication_Interview_Prep.md) | Synchronous · Asynchronous · REST · Messaging · Communication Patterns |
+| 005 | [Gateway & Service Discovery Architecture](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD4_005_Gateway_and_Service_Discovery_Architecture_Interview_Prep.md) | API Gateway · Service Discovery · Routing · Load Balancing |
+
+---

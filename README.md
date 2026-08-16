@@ -1,4 +1,4 @@
-# 📘 Java Interview Prep — Master Index
+# 🧑‍🏫 Java Interview Prep — Master Index
 
 ---
 
@@ -37,5 +37,17 @@
 | 008 | [Spring Boot Testing](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD2_008_Spring_Boot_Testing_Interview_Prep.md) | JUnit 5 · Mockito · MockMvc · Testcontainers |
 | 009 | [Spring Caching](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD2_009_Spring_Caching_Interview_Prep.md) | Cache Abstraction · Redis · Ehcache · Eviction |
 | 010 | [Spring Messaging](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD2_010_Spring_Messaging_Interview_Prep.md) | Kafka · RabbitMQ · JMS · Listeners |
+
+---
+
+## 🌨️ MODULE 3 — SPRING CLOUD 🌨️
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [Config and Service Discovery](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD3_001_Config_and_Service_Discovery_Interview_Prep.md) | Config Server · Eureka · Service Registry |
+| 002 | [Spring Cloud Gateway](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD3_002_Spring_Cloud_Gateway_Interview_Prep.md) | API Gateway · Routing · Filters |
+| 003 | [Load Balancing and OpenFeign](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD3_003_Load_Balancing_and_OpenFeign_Interview_Prep.md) | Client-side Load Balancing · Feign Client |
+| 004 | [Resilience4j](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD3_004_Resilience4j_Interview_Prep.md) | Circuit Breaker · Retry · Bulkhead · Rate Limiter |
+| 005 | [Distributed Tracing](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD3_005_Distributed_Tracingj_Interview_Prep.md) | Sleuth · Zipkin · Correlation IDs · Distributed Logging |
 
 ---

@@ -1,4 +1,4 @@
-# Spring Core Concepts — Interview Prep — Senior Java Developer
+# Spring Core Concepts — Interview Prep
 ---
 
 ## SECTION 1: IoC & DEPENDENCY INJECTION FUNDAMENTALS

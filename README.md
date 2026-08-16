@@ -2,7 +2,7 @@
 
 ---
 
-## MODULE 1 — CORE JAVA 
+## 🍵 MODULE 1 — CORE JAVA 🍵
 
 | # | Topic | Covers |
 |---|---|---|
@@ -23,7 +23,7 @@
 
 ---
 
-## MODULE 2 — SPRING 🔲
+## 🍃 MODULE 2 — SPRING BOOT 🍃
 
 | # | Topic | Covers |
 |---|---|---|

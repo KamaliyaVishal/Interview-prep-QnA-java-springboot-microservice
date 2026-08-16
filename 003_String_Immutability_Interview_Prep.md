@@ -4,17 +4,13 @@
 
 > **Interview benchmark:** Be ready to explain **What is it? → Why does it exist? → How does it work? → What problem does it solve? → Example → Trade-offs → Production scenario → Interview trap → Senior follow-up.**
 
-> **Source note:** The available benchmark material supports the broader senior framing that Java `String` immutability prevents aliasing/mutation problems and contrasts immutable `String` with mutable `StringBuilder`. fileciteturn10file4L422-L426 The source set does **not** contain a dedicated String Immutability module, so the detailed String Pool, `intern()`, `StringBuilder`, and Compact Strings explanations below are added as domain knowledge rather than presented as source-derived content.
-
 ---
 
 # SECTION 1 — STRING IMMUTABILITY FUNDAMENTALS
 
 ## Q1. What is String immutability in Java?
 
-### Answer
-
-A Java `String` object is **immutable**, meaning that once a `String` object is created, its character sequence cannot be changed.
+**Answer:** A Java `String` object is **immutable**, meaning that once a `String` object is created, its character sequence cannot be changed.
 
 Example:
 
@@ -48,17 +44,13 @@ s.concat(" Developer");
        +--> new String "Java Developer"
 ```
 
-### Senior answer
-
-> String immutability means the state of a String object cannot change after construction. Operations such as concatenation, replacement, trimming, or case conversion create another String rather than modifying the existing object.
+**Senior answer:** String immutability means the state of a String object cannot change after construction. Operations such as concatenation, replacement, trimming, or case conversion create another String rather than modifying the existing object.
 
 ---
 
 ## Q2. Why is String immutable in Java?
 
-### Answer
-
-String immutability solves several important problems:
+**Answer:** String immutability solves several important problems:
 
 1. **String Pool sharing**
 2. **Thread safety**
@@ -83,9 +75,7 @@ Both references can safely refer to the same pooled object because nobody can mo
 
 ## Q3. What problems would occur if String were mutable?
 
-### Answer
-
-Suppose:
+**Answer:** Suppose:
 
 ```java
 String role = "USER";
@@ -109,9 +99,7 @@ and A changed the value to:
 
 the other components could unexpectedly observe the changed value.
 
-Immutability eliminates this aliasing problem.
-
-This is consistent with the benchmark's explanation that String immutability prevents a class of aliasing bugs that mutable objects such as `StringBuilder` can expose. fileciteturn10file4L422-L426
+Immutability eliminates this aliasing problem. This is consistent with the broader senior framing that String immutability prevents aliasing/mutation problems and contrasts immutable `String` with mutable `StringBuilder`.
 
 ---
 
@@ -119,9 +107,7 @@ This is consistent with the benchmark's explanation that String immutability pre
 
 ## Q4. How does String remain immutable?
 
-### Answer
-
-`String` internally maintains its character data and does not expose operations that modify the existing object's content.
+**Answer:** `String` internally maintains its character data and does not expose operations that modify the existing object's content.
 
 Operations return a new String when the resulting content differs.
 
@@ -138,7 +124,7 @@ System.out.println(s2); // HELLO
 
 The original object remains unchanged.
 
-### Important distinction
+**Important distinction:**
 
 ```text
 String
@@ -154,9 +140,7 @@ mutable character sequence
 
 ## Q5. Is String immutable because the class is `final`?
 
-### Answer
-
-**No.**
+**Answer: No.**
 
 `String` being final prevents subclassing, but `final` alone does not make an object immutable.
 
@@ -178,17 +162,13 @@ final class ≠ immutable object
 
 String immutability is a property of its complete design.
 
-### Senior interview answer
-
-> `final` prevents subclassing, while immutability means object state cannot change. They are related design decisions but are not equivalent.
+**Senior answer:** `final` prevents subclassing, while immutability means object state cannot change. They are related design decisions but are not equivalent.
 
 ---
 
 ## Q6. What makes a class immutable?
 
-### Answer
-
-A typical immutable class should:
+**Answer:** A typical immutable class should:
 
 - Prevent external mutation of its state
 - Keep state private
@@ -223,9 +203,7 @@ Because `String` is immutable, returning `value` does not expose mutable interna
 
 ## Q7. What is the String Pool?
 
-### Answer
-
-The String Pool is a JVM-managed area used to canonicalize String values so that identical interned strings can be shared.
+**Answer:** The String Pool is a JVM-managed area used to canonicalize String values so that identical interned strings can be shared.
 
 Example:
 
@@ -257,9 +235,7 @@ This reduces duplicate String objects for interned strings.
 
 ## Q8. What is the difference between String Pool and normal heap Strings?
 
-### Answer
-
-A String literal such as:
+**Answer:** A String literal such as:
 
 ```java
 String s = "Java";
@@ -289,9 +265,7 @@ System.out.println(a.equals(b)); // true
 
 ## Q9. Explain `==` vs `equals()` for String.
 
-### Answer
-
-`==` compares references.
+**Answer:** `==` compares references.
 
 ```java
 String a = new String("Java");
@@ -303,9 +277,7 @@ a.equals(b)  // true
 
 `equals()` compares String content.
 
-### Interview rule
-
-> Use `equals()` for String value comparison. Do not use `==` when the intention is to compare text values.
+**Interview rule:** Use `equals()` for String value comparison. Do not use `==` when the intention is to compare text values.
 
 ---
 
@@ -318,9 +290,7 @@ String b = "Java";
 System.out.println(a == b);
 ```
 
-### Answer
-
-Both literals refer to the same pooled String object.
+**Answer:** Both literals refer to the same pooled String object.
 
 Therefore:
 
@@ -330,13 +300,7 @@ a ──┐
 b ──┘
 ```
 
-so:
-
-```java
-a == b
-```
-
-is true.
+so `a == b` is true.
 
 ---
 
@@ -349,9 +313,7 @@ String b = new String("Java");
 System.out.println(a == b);
 ```
 
-### Answer
-
-Each `new String()` explicitly creates a distinct String object.
+**Answer:** Each `new String()` explicitly creates a distinct String object.
 
 So:
 
@@ -376,7 +338,7 @@ String a = "Java";
 String b = new String("Java");
 ```
 
-### Answer
+**Answer:**
 
 ```java
 String a = "Java";
@@ -398,15 +360,7 @@ a == b
 
 is false.
 
-### Recommendation
-
-Avoid unnecessary:
-
-```java
-new String("Java")
-```
-
-when a literal is sufficient.
+**Recommendation:** Avoid unnecessary `new String("Java")` when a literal is sufficient.
 
 ---
 
@@ -414,9 +368,7 @@ when a literal is sufficient.
 
 ## Q13. What is `String.intern()`?
 
-### Answer
-
-`intern()` returns the canonical pooled representation of a String.
+**Answer:** `intern()` returns the canonical pooled representation of a String.
 
 Example:
 
@@ -436,9 +388,7 @@ System.out.println(b == c); // true
 
 ## Q14. Why would you use `intern()`?
 
-### Answer
-
-Potential reasons include:
+**Answer:** Potential reasons include:
 
 - Canonicalizing repeated String values
 - Reducing duplicate representations in specific workloads
@@ -446,17 +396,13 @@ Potential reasons include:
 
 However, `intern()` should **not** automatically be treated as a universal memory optimization.
 
-### Senior answer
-
-> I use `intern()` only when I have a measured use case for canonicalization and understand the workload. Excessive interning of high-cardinality or short-lived values can create memory pressure and provide little benefit.
+**Senior answer:** I use `intern()` only when I have a measured use case for canonicalization and understand the workload. Excessive interning of high-cardinality or short-lived values can create memory pressure and provide little benefit.
 
 ---
 
 ## Q15. Can `intern()` improve memory usage?
 
-### Answer
-
-Potentially, but only for appropriate workloads.
+**Answer:** Potentially, but only for appropriate workloads.
 
 Suppose an application creates many duplicate String values:
 
@@ -480,9 +426,7 @@ UUID-3
 
 interning provides little sharing benefit and may increase memory pressure.
 
-### Senior rule
-
-> Never use `intern()` as a blanket optimization. Measure allocation patterns first.
+**Senior rule:** Never use `intern()` as a blanket optimization. Measure allocation patterns first.
 
 ---
 
@@ -490,9 +434,7 @@ interning provides little sharing benefit and may increase memory pressure.
 
 ## Q16. What happens when you concatenate Strings using `+`?
 
-### Answer
-
-For source-level String concatenation, the Java compiler/JVM can translate the operation into an efficient concatenation mechanism appropriate to the Java version and context.
+**Answer:** For source-level String concatenation, the Java compiler/JVM can translate the operation into an efficient concatenation mechanism appropriate to the Java version and context.
 
 Example:
 
@@ -520,9 +462,7 @@ Use a mutable builder for repeated incremental construction.
 
 ## Q17. Why is String concatenation inside a loop considered inefficient?
 
-### Answer
-
-`String` is immutable.
+**Answer:** `String` is immutable.
 
 Therefore:
 
@@ -546,13 +486,9 @@ for (int i = 0; i < 10000; i++) {
 String result = builder.toString();
 ```
 
-### Senior nuance
+**Senior nuance:** Do not say "`+` always creates a StringBuilder" as a universal implementation rule. Modern Java compilers/JVMs can use more optimized concatenation strategies.
 
-Do not say "`+` always creates a StringBuilder" as a universal implementation rule. Modern Java compilers/JVMs can use more optimized concatenation strategies.
-
-The practical rule is:
-
-> For explicit repeated mutation in loops, use `StringBuilder`.
+The practical rule is: for explicit repeated mutation in loops, use `StringBuilder`.
 
 ---
 
@@ -560,9 +496,7 @@ The practical rule is:
 
 ## Q18. What is StringBuilder?
 
-### Answer
-
-`StringBuilder` is a mutable sequence of characters designed for efficient modifications such as:
+**Answer:** `StringBuilder` is a mutable sequence of characters designed for efficient modifications such as:
 
 ```java
 append()
@@ -595,9 +529,7 @@ StringBuilder → mutable
 
 ## Q19. Why is StringBuilder faster than repeated String concatenation?
 
-### Answer
-
-`StringBuilder` maintains a mutable internal buffer.
+**Answer:** `StringBuilder` maintains a mutable internal buffer.
 
 Instead of creating a new String for every append:
 
@@ -650,9 +582,7 @@ StringBuilder
 
 ## Q21. Is StringBuilder thread-safe?
 
-### Answer
-
-No.
+**Answer:** No.
 
 `StringBuilder` is not synchronized.
 
@@ -668,7 +598,7 @@ StringBuilder builder = new StringBuilder();
 
 ## Q22. StringBuilder vs StringBuffer?
 
-### Answer
+**Answer:**
 
 | StringBuilder | StringBuffer |
 |---|---|
@@ -677,9 +607,7 @@ StringBuilder builder = new StringBuilder();
 | Lower synchronization overhead | More synchronization overhead |
 | Java 5+ | Older API |
 
-### Senior answer
-
-> I default to `StringBuilder` when the builder is confined to one thread. I use `StringBuffer` only when its synchronization semantics are actually required, though explicit concurrency design is often preferable.
+**Senior answer:** I default to `StringBuilder` when the builder is confined to one thread. I use `StringBuffer` only when its synchronization semantics are actually required, though explicit concurrency design is often preferable.
 
 ---
 
@@ -687,9 +615,7 @@ StringBuilder builder = new StringBuilder();
 
 ## Q23. What is StringBuilder capacity?
 
-### Answer
-
-`StringBuilder` maintains an internal capacity.
+**Answer:** `StringBuilder` maintains an internal capacity.
 
 Example:
 
@@ -706,19 +632,13 @@ You can inspect it:
 builder.capacity();
 ```
 
-### Why does capacity matter?
-
-If the builder needs more space, it grows its internal storage.
-
-If the approximate final size is known, setting an appropriate initial capacity can reduce resizing and copying.
+**Why does capacity matter?** If the builder needs more space, it grows its internal storage. If the approximate final size is known, setting an appropriate initial capacity can reduce resizing and copying.
 
 ---
 
 ## Q24. What happens when StringBuilder exceeds its capacity?
 
-### Answer
-
-The builder expands its internal storage.
+**Answer:** The builder expands its internal storage.
 
 The exact growth behavior is an implementation detail, but the important interview concept is:
 
@@ -740,9 +660,7 @@ For very large builders, repeated growth can increase allocation and copying ove
 
 ## Q25. What are Compact Strings?
 
-### Answer
-
-Compact Strings are a JVM implementation optimization introduced in **Java 9**.
+**Answer:** Compact Strings are a JVM implementation optimization introduced in **Java 9**.
 
 The key idea is that many Strings contain characters that can be represented using a compact single-byte encoding, so the JVM can use a smaller internal representation when possible.
 
@@ -756,9 +674,7 @@ This can reduce:
 
 ## Q26. How do Compact Strings work conceptually?
 
-### Answer
-
-Modern Java implementations can represent String content using a byte-oriented backing representation plus a coder/encoding indicator.
+**Answer:** Modern Java implementations can represent String content using a byte-oriented backing representation plus a coder/encoding indicator.
 
 Conceptually:
 
@@ -778,17 +694,13 @@ If the contents can be represented compactly, less memory is needed.
 
 If not, a wider representation is used.
 
-### Senior point
-
-This is a JVM implementation detail, not something application code should depend on as a public String API contract.
+**Senior point:** This is a JVM implementation detail, not something application code should depend on as a public String API contract.
 
 ---
 
 ## Q27. Why were Compact Strings introduced?
 
-### Answer
-
-Many enterprise applications process large quantities of text such as:
+**Answer:** Many enterprise applications process large quantities of text such as:
 
 - JSON
 - HTTP headers
@@ -807,9 +719,7 @@ Therefore reducing String memory footprint can have system-wide benefits.
 
 ## Q28. Do Compact Strings make every String use one byte per character?
 
-### Answer
-
-No.
+**Answer:** No.
 
 That is an important interview trap.
 
@@ -817,9 +727,7 @@ Compact Strings use a compact representation when the content is compatible with
 
 Strings requiring characters outside that representation use a wider representation.
 
-Therefore:
-
-> Compact Strings are an optimization strategy, not a guarantee that every character occupies exactly one byte.
+Therefore: Compact Strings are an optimization strategy, not a guarantee that every character occupies exactly one byte.
 
 ---
 
@@ -827,17 +735,11 @@ Therefore:
 
 ## Q29. Where are Strings stored?
 
-### Answer
-
-The String object itself is a Java object managed by the JVM heap.
+**Answer:** The String object itself is a Java object managed by the JVM heap.
 
 String literals are canonicalized through the String Pool.
 
-Do not oversimplify this as:
-
-> "Strings are stored in the String Pool."
-
-The more accurate explanation is:
+Do not oversimplify this as "Strings are stored in the String Pool." The more accurate explanation is:
 
 ```text
 String object → heap
@@ -856,9 +758,7 @@ String s2 = "Java";
 String s3 = new String("Java");
 ```
 
-### Answer
-
-Conceptually:
+**Answer:** Conceptually:
 
 ```text
 String Pool
@@ -891,9 +791,7 @@ s1.equals(s3) // true
 
 ## Q31. Why is String a good HashMap key?
 
-### Answer
-
-Because String is immutable.
+**Answer:** Because String is immutable.
 
 If a mutable object used as a key changed after insertion, its hash code could change and the map might no longer be able to locate it correctly.
 
@@ -914,9 +812,7 @@ The key's content cannot later change.
 
 ## Q32. Why does String cache its hash code?
 
-### Answer
-
-String hashing can be reused because String content never changes.
+**Answer:** String hashing can be reused because String content never changes.
 
 Conceptually:
 
@@ -930,9 +826,7 @@ s.hashCode();
 
 The String implementation can cache the computed hash value.
 
-### Why is this possible?
-
-Because:
+**Why is this possible?**
 
 ```text
 String immutable
@@ -952,9 +846,7 @@ This is one of the practical benefits of immutability.
 
 ## Q33. Why is String immutability important for security?
 
-### Answer
-
-Strings are frequently used for values such as:
+**Answer:** Strings are frequently used for values such as:
 
 - Class names
 - File paths
@@ -968,9 +860,7 @@ If String objects could change after validation, code could theoretically valida
 
 Immutability provides stable values across API boundaries.
 
-### Important security nuance
-
-String immutability does **not** mean Strings are ideal for every secret.
+**Important security nuance:** String immutability does **not** mean Strings are ideal for every secret.
 
 For sensitive in-memory credentials, `char[]` has historically been considered in some designs because its contents can be explicitly overwritten, although modern application design should consider the complete secret-management strategy rather than treating `char[]` as a universal security solution.
 
@@ -980,9 +870,7 @@ For sensitive in-memory credentials, `char[]` has historically been considered i
 
 ## Q34. Why are passwords sometimes represented using char[] instead of String?
 
-### Answer
-
-A String cannot be explicitly cleared because it is immutable.
+**Answer:** A String cannot be explicitly cleared because it is immutable.
 
 For an array:
 
@@ -1000,9 +888,7 @@ This can reduce the lifetime of the secret in that particular array.
 
 However, this is not a guarantee that no copies ever existed.
 
-### Senior answer
-
-> `char[]` provides explicit overwrite capability, while String does not. But secure secret handling is broader than choosing `char[]`; modern applications should rely on appropriate credential and secret-management mechanisms.
+**Senior answer:** `char[]` provides explicit overwrite capability, while String does not. But secure secret handling is broader than choosing `char[]`; modern applications should rely on appropriate credential and secret-management mechanisms.
 
 ---
 
@@ -1010,9 +896,7 @@ However, this is not a guarantee that no copies ever existed.
 
 ## Q35. Does `replace()` modify the original String?
 
-### Answer
-
-No.
+**Answer:** No.
 
 ```java
 String s = "Java";
@@ -1029,9 +913,7 @@ The original remains unchanged.
 
 ## Q36. Does `toUpperCase()` modify the String?
 
-### Answer
-
-No.
+**Answer:** No.
 
 ```java
 String s = "java";
@@ -1046,9 +928,7 @@ System.out.println(upper); // JAVA
 
 ## Q37. Does `trim()` modify the String?
 
-### Answer
-
-No.
+**Answer:** No.
 
 String operations return another String when a changed result is required.
 
@@ -1075,7 +955,7 @@ s.concat(" World");
 System.out.println(s);
 ```
 
-### Answer
+**Answer:**
 
 ```text
 Hello
@@ -1095,7 +975,7 @@ s = s.concat(" World");
 System.out.println(s);
 ```
 
-### Answer
+**Answer:**
 
 ```text
 Hello World
@@ -1114,9 +994,7 @@ String b = "Ja" + "va";
 System.out.println(a == b);
 ```
 
-### Answer
-
-Typically:
+**Answer:** Typically:
 
 ```text
 true
@@ -1136,9 +1014,7 @@ String b = prefix + "va";
 System.out.println(a == b);
 ```
 
-### Answer
-
-Do not assume `true`.
+**Answer:** Do not assume `true`.
 
 Because `prefix` is a variable, the concatenation is not the same compile-time constant expression as:
 
@@ -1172,7 +1048,7 @@ String c = "Java";
 System.out.println(b == c);
 ```
 
-### Answer
+**Answer:**
 
 ```text
 true
@@ -1191,9 +1067,7 @@ StringBuilder b = new StringBuilder("Java");
 System.out.println(a.equals(b));
 ```
 
-### Answer
-
-Do not treat `StringBuilder.equals()` like `String.equals()`.
+**Answer:** Do not treat `StringBuilder.equals()` like `String.equals()`.
 
 `StringBuilder` does not override `Object.equals()` for content equality.
 
@@ -1211,9 +1085,7 @@ a.toString().equals(b.toString())
 
 ## Q44. When should you use StringBuilder?
 
-### Answer
-
-Use `StringBuilder` when constructing text incrementally:
+**Answer:** Use `StringBuilder` when constructing text incrementally:
 
 ```java
 StringBuilder builder = new StringBuilder();
@@ -1241,9 +1113,7 @@ Common use cases:
 
 ## Q45. When should you NOT use StringBuilder?
 
-### Answer
-
-Don't use it automatically for every String operation.
+**Answer:** Don't use it automatically for every String operation.
 
 For simple concatenation:
 
@@ -1255,9 +1125,7 @@ is clear and appropriate.
 
 Also avoid manually replacing every `+` with `StringBuilder` without profiling or understanding the context.
 
-### Senior principle
-
-> Optimize repeated mutable construction, not readability.
+**Senior principle:** Optimize repeated mutable construction, not readability.
 
 ---
 
@@ -1265,9 +1133,7 @@ Also avoid manually replacing every `+` with `StringBuilder` without profiling o
 
 ## Q46. Is String thread-safe?
 
-### Answer
-
-String is immutable, so its state cannot be changed after construction.
+**Answer:** String is immutable, so its state cannot be changed after construction.
 
 Therefore a String can safely be shared among multiple threads without synchronization for ordinary read-only use.
 
@@ -1280,15 +1146,7 @@ private static final String SERVICE_NAME =
 
 Multiple threads can safely read it.
 
-### Important distinction
-
-It is more precise to say:
-
-> String is immutable and therefore safely shareable.
-
-rather than saying:
-
-> String has synchronization and is thread-safe.
+**Important distinction:** It is more precise to say "String is immutable and therefore safely shareable" rather than "String has synchronization and is thread-safe."
 
 ---
 
@@ -1296,16 +1154,16 @@ rather than saying:
 
 ## Q47. What are the advantages of the String Pool?
 
-### Answer
+**Answer:**
 
-### Benefits
+**Benefits:**
 
 - Reduces duplicate pooled String values
 - Saves memory for repeated literals
 - Makes literal identity sharing possible
 - Supports canonicalization
 
-### Trade-offs
+**Trade-offs:**
 
 The pool itself is not free.
 
@@ -1319,9 +1177,7 @@ Poorly chosen interning strategies can cause:
 
 ## Q48. Should every String be interned?
 
-### Answer
-
-**No.**
+**Answer: No.**
 
 This is a common senior interview trap.
 
@@ -1335,9 +1191,7 @@ for (...) {
 
 If every value is unique, interning provides little sharing.
 
-The better approach is:
-
-> Intern only when the application has a strong canonicalization requirement and the memory/performance characteristics have been measured.
+The better approach is: intern only when the application has a strong canonicalization requirement and the memory/performance characteristics have been measured.
 
 ---
 
@@ -1345,35 +1199,23 @@ The better approach is:
 
 ## Q49. What changed for String representation in Java 9?
 
-### Answer
-
-Java 9 introduced Compact Strings as a JVM implementation optimization.
+**Answer:** Java 9 introduced Compact Strings as a JVM implementation optimization.
 
 The traditional conceptual model often described String content as UTF-16-oriented character storage.
 
 Compact Strings allow the JVM to use a more compact byte representation for strings that can be represented using the compact encoding, while retaining a wider representation when required.
 
-### Interview answer
-
-> Java 9's Compact Strings reduce the memory footprint of many Strings by using a byte-based representation with a coder indicating the representation. Strings requiring wider characters can use the wider representation.
+**Interview answer:** Java 9's Compact Strings reduce the memory footprint of many Strings by using a byte-based representation with a coder indicating the representation. Strings requiring wider characters can use the wider representation.
 
 ---
 
 ## Q50. Do developers need to change application code for Compact Strings?
 
-### Answer
-
-Generally, no.
+**Answer:** Generally, no.
 
 It is primarily a JVM implementation optimization.
 
-Application code continues to use:
-
-```java
-String
-```
-
-and standard String APIs.
+Application code continues to use `String` and standard String APIs.
 
 The JVM manages the internal representation.
 
@@ -1381,9 +1223,7 @@ The JVM manages the internal representation.
 
 ## Q51. Can Compact Strings improve application performance?
 
-### Answer
-
-Potentially.
+**Answer:** Potentially.
 
 Lower String memory usage can reduce:
 
@@ -1394,9 +1234,7 @@ Lower String memory usage can reduce:
 
 The actual benefit depends on the application's text workload.
 
-### Senior answer
-
-> Compact Strings are primarily a memory-efficiency optimization, and performance benefits are workload-dependent. I would validate impact with profiling and production-like benchmarks.
+**Senior answer:** Compact Strings are primarily a memory-efficiency optimization, and performance benefits are workload-dependent. I would validate impact with profiling and production-like benchmarks.
 
 ---
 
@@ -1404,9 +1242,7 @@ The actual benefit depends on the application's text workload.
 
 ## Q52. Why is String safe as a HashMap key?
 
-### Answer
-
-Because the String's content cannot change.
+**Answer:** Because the String's content cannot change.
 
 Example:
 
@@ -1419,22 +1255,13 @@ counts.put("Java", 10);
 
 The hash code remains consistent with the String's content.
 
-Contrast that with a mutable key whose fields affect:
-
-```java
-hashCode()
-equals()
-```
-
-and are changed after insertion.
+Contrast that with a mutable key whose fields affect `hashCode()` and `equals()` and are changed after insertion.
 
 ---
 
 ## Q53. Why is immutability useful for caching?
 
-### Answer
-
-An immutable value can safely be:
+**Answer:** An immutable value can safely be:
 
 - Shared
 - Cached
@@ -1452,9 +1279,7 @@ String is therefore a natural value object in many APIs.
 
 ## Q54. An API builds a large response using `result += value` in a loop. What would you change?
 
-### Answer
-
-First confirm the hot path through profiling.
+**Answer:** First confirm the hot path through profiling.
 
 If repeated concatenation is causing excessive allocation, use:
 
@@ -1477,9 +1302,7 @@ If a framework already provides a specialized join/serialization API, that may b
 
 ## Q55. Your service has millions of duplicate Strings in memory. Would you call `intern()`?
 
-### Answer
-
-Not immediately.
+**Answer:** Not immediately.
 
 I would first determine:
 
@@ -1498,9 +1321,7 @@ If values are high-cardinality, interning may make things worse.
 
 ## Q56. Why can String immutability simplify multi-threaded code?
 
-### Answer
-
-Because multiple threads can share the same String without synchronization for mutation.
+**Answer:** Because multiple threads can share the same String without synchronization for mutation.
 
 ```text
 Thread A ──┐
@@ -1516,9 +1337,7 @@ This eliminates a category of race conditions associated with mutable shared sta
 
 ## Q57. Why is String immutability useful in security-sensitive APIs?
 
-### Answer
-
-Suppose a validated value is:
+**Answer:** Suppose a validated value is:
 
 ```java
 String path = validatePath(input);
@@ -1536,9 +1355,7 @@ It helps reduce time-of-check/time-of-use-style aliasing problems that would be 
 
 ## Q58. "String is final, therefore it is immutable." Correct?
 
-### Answer
-
-**Incomplete.**
+**Answer: Incomplete.**
 
 `final` prevents subclassing.
 
@@ -1550,9 +1367,7 @@ String's immutability comes from its overall class design, not simply the `final
 
 ## Q59. "String Pool is located in Stack memory." Correct?
 
-### Answer
-
-**No.**
+**Answer: No.**
 
 Do not say that String objects are stored on the stack.
 
@@ -1562,9 +1377,7 @@ String objects are heap objects. The JVM maintains the String Pool as part of it
 
 ## Q60. "StringBuilder is thread-safe because it is part of java.lang." Correct?
 
-### Answer
-
-No.
+**Answer:** No.
 
 Package membership has nothing to do with thread safety.
 
@@ -1574,27 +1387,17 @@ Package membership has nothing to do with thread safety.
 
 ## Q61. "StringBuffer is always better because it is thread-safe." Correct?
 
-### Answer
-
-No.
+**Answer:** No.
 
 Synchronization adds overhead and may not be necessary.
 
-If the builder is thread-confined:
-
-```java
-StringBuilder
-```
-
-is usually the appropriate choice.
+If the builder is thread-confined, `StringBuilder` is usually the appropriate choice.
 
 ---
 
 ## Q62. "intern() always saves memory." Correct?
 
-### Answer
-
-No.
+**Answer:** No.
 
 Interning can reduce duplicate values in suitable workloads but can also increase memory pressure when applied indiscriminately.
 
@@ -1602,15 +1405,11 @@ Interning can reduce duplicate values in suitable workloads but can also increas
 
 ## Q63. "Every String operation creates a new String." Correct?
 
-### Answer
-
-Not precisely.
+**Answer:** Not precisely.
 
 Many operations return the original String when no change is necessary, and JVM/compiler optimizations can also affect implementation behavior.
 
-The correct conceptual rule is:
-
-> String's existing value cannot be mutated; an operation that needs a different value must provide a different String result.
+The correct conceptual rule is: String's existing value cannot be mutated; an operation that needs a different value must provide a different String result.
 
 ---
 

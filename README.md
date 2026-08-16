@@ -6,22 +6,22 @@
 
 ## MODULE 1 — CORE JAVA ✅
 
-| File | Topic | Status |
-|---|---|---|
-| `001_Core_Java_Fundamentals_Interview_Prep.md` | JVM · Memory · GC · ClassLoaders · Types · Pass-by-Value | ✅ |
-| `002_OOP_Interview_Prep.md` | Encapsulation · Inheritance · Polymorphism · Abstract · Cloning | ✅ |
-| `003_String_Immutability_Interview_Prep.md` | String Pool · `intern()` · StringBuilder · Compact Strings | ✅ |
-| `004_Generics_Interview_Prep.md` | Type Erasure · Wildcards · PECS · Bounded Types | ✅ |
-| `005_Collections_Framework_Interview_Prep.md` | List/Set/Map · HashMap Internals · Iterators · equals/hashCode | ✅ |
-| `006_Exception_Handling_Interview_Prep.md` | Checked/Unchecked · try-catch · Custom · Chaining | ✅ |
-| `007_Java_IO_and_NIO_Interview_Prep.md` | IO Streams · NIO · Channels · Buffers · File API | ✅ |
-| `008_Multithreading_and_Concurrency_Interview_Prep.md` | Threads · Locks · Executor · CompletableFuture · ThreadLocal · Fork/Join | ✅ |
-| `009_Java_8_Features_Interview_Prep.md` | Lambdas · Streams · Collectors · Optional · Method Refs · Date API | ✅ |
-| `010_Java_8_Programming_Problems_Interview_Prep.md` | Stream coding problems · Lambda exercises | ✅ |
-| `011_Java_9_26_Features_Interview_Prep.md` | Records · Sealed · Pattern Matching · Modules · Virtual Threads | ✅ |
-| `012_SOLID_Principles_Interview_Prep.md` | SRP · OCP · LSP · ISP · DIP · Real examples | ✅ |
-| `013_Design_Patterns_Interview_Prep.md` | Creational · Structural · Behavioral · Patterns in Spring | ✅ |
-| `014_Reflection_Serialization_Interview_Prep.md` | Reflection API · Serialization · serialVersionUID · transient | ✅ |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 001 | [Core Java Fundamentals](https://github.com/KamaliyaVishal/Interview_QA/blob/main/001_MOD1_Core_Java_Fundamentals_Interview_Prep.md) | JVM · Memory · GC · ClassLoaders · Types · Pass-by-Value | ✅ |
+| 002 | [OOP](https://github.com/KamaliyaVishal/Interview_QA/blob/main/002_MOD1_OOP_Interview_Prep.md) | Encapsulation · Inheritance · Polymorphism · Abstract · Cloning | ✅ |
+| 003 | [String Immutability](https://github.com/KamaliyaVishal/Interview_QA/blob/main/003_MOD1_String_Immutability_Interview_Prep.md) | String Pool · `intern()` · StringBuilder · Compact Strings | ✅ |
+| 004 | [Generics](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_MOD1_Generics_Interview_Prep.md) | Type Erasure · Wildcards · PECS · Bounded Types | ✅ |
+| 005 | [Collections Framework](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_MOD1_Collections_Framework_Interview_Prep.md) | List/Set/Map · HashMap Internals · Iterators · equals/hashCode | ✅ |
+| 006 | [Exception Handling](https://github.com/KamaliyaVishal/Interview_QA/blob/main/006_MOD1_Exception_Handling_Interview_Prep.md) | Checked/Unchecked · try-catch · Custom · Chaining | ✅ |
+| 007 | [Java I/O and NIO](https://github.com/KamaliyaVishal/Interview_QA/blob/main/007_MOD1_Java_IO_and_NIO_Interview_Prep.md) | IO Streams · NIO · Channels · Buffers · File API | ✅ |
+| 008 | [Multithreading & Concurrency](https://github.com/KamaliyaVishal/Interview_QA/blob/main/008_MOD1_Multithreading_and_Concurrency_Interview_Prep.md) | Threads · Locks · Executor · CompletableFuture · ThreadLocal · Fork/Join | ✅ |
+| 009 | [Java 8 Features](https://github.com/KamaliyaVishal/Interview_QA/blob/main/009_MOD1_Java_8_Features_Interview_Prep.md) | Lambdas · Streams · Collectors · Optional · Method Refs · Date API | ✅ |
+| 010 | [Java 8 Programming Problems](https://github.com/KamaliyaVishal/Interview_QA/blob/main/010_MOD1_Java_8_Programming_Problems_Interview_Prep.md) | Stream coding problems · Lambda exercises | ✅ |
+| 011 | [Java 9–26 Features](https://github.com/KamaliyaVishal/Interview_QA/blob/main/011_MOD1_Java_9_26_Features_Interview_Prep.md) | Records · Sealed · Pattern Matching · Modules · Virtual Threads | ✅ |
+| 012 | [SOLID Principles](https://github.com/KamaliyaVishal/Interview_QA/blob/main/012_MOD1_SOLID_Principles_Interview_Prep.md) | SRP · OCP · LSP · ISP · DIP · Real examples | ✅ |
+| 013 | [Design Patterns](https://github.com/KamaliyaVishal/Interview_QA/blob/main/013_MOD1_Design_Patterns_Interview_Prep.md) | Creational · Structural · Behavioral · Patterns in Spring | ✅ |
+| 014 | [Reflection & Serialization](https://github.com/KamaliyaVishal/Interview_QA/blob/main/014_MOD1_Reflection_Serialization_Interview_Prep.md) | Reflection API · Serialization · serialVersionUID · transient | ✅ |
 
 **Module 1 status: 14 of 14 files complete.**
 
@@ -29,74 +29,74 @@
 
 ## MODULE 2 — SPRING 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `015_Spring_Core_Interview_Prep.md` | IoC · DI · Bean Lifecycle · Scopes · Autowired | 🔲 |
-| `016_Spring_Boot_Interview_Prep.md` | Auto-config · Starters · Profiles · Properties | 🔲 |
-| `017_Spring_MVC_Interview_Prep.md` | REST APIs · Validation · Exception Handling | 🔲 |
-| `018_Spring_Security_Interview_Prep.md` | JWT · OAuth2 · Security Filters | 🔲 |
-| `019_Hibernate_JPA_Interview_Prep.md` | ORM · Caching · Transactions · N+1 Problem | 🔲 |
-| `020_Spring_AOP_Actuator_Cloud_Interview_Prep.md` | AOP · Actuator · Spring Cloud · Feign · Gateway · Config Server · Eureka · Resilience4j | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 015 | Spring Core `015_MOD2_Spring_Core_Interview_Prep.md` | IoC · DI · Bean Lifecycle · Scopes · Autowired | 🔲 |
+| 016 | Spring Boot `016_MOD2_Spring_Boot_Interview_Prep.md` | Auto-config · Starters · Profiles · Properties | 🔲 |
+| 017 | Spring MVC `017_MOD2_Spring_MVC_Interview_Prep.md` | REST APIs · Validation · Exception Handling | 🔲 |
+| 018 | Spring Security `018_MOD2_Spring_Security_Interview_Prep.md` | JWT · OAuth2 · Security Filters | 🔲 |
+| 019 | Hibernate & JPA `019_MOD2_Hibernate_JPA_Interview_Prep.md` | ORM · Caching · Transactions · N+1 Problem | 🔲 |
+| 020 | Spring AOP / Actuator / Cloud `020_MOD2_Spring_AOP_Actuator_Cloud_Interview_Prep.md` | AOP · Actuator · Spring Cloud · Feign · Gateway · Config Server · Eureka · Resilience4j | 🔲 |
 
 ---
 
 ## MODULE 3 — MICROSERVICES 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `021_Microservices_Architecture_Interview_Prep.md` | Design Principles · API Gateway · Service Discovery | 🔲 |
-| `022_Fault_Tolerance_Interview_Prep.md` | Circuit Breaker · Bulkhead · Retry · Rate Limiting | 🔲 |
-| `023_Kafka_EventDriven_Interview_Prep.md` | Kafka · RabbitMQ · Outbox · Exactly-Once · DLQ | 🔲 |
-| `024_Microservices_Patterns_Interview_Prep.md` | Saga · CQRS · Idempotency · Event Ordering | 🔲 |
-| `025_Distributed_Logging_Tracing_Interview_Prep.md` | ELK · Zipkin · Sleuth · Correlation IDs | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 021 | Microservices Architecture `021_MOD3_Microservices_Architecture_Interview_Prep.md` | Design Principles · API Gateway · Service Discovery | 🔲 |
+| 022 | Fault Tolerance `022_MOD3_Fault_Tolerance_Interview_Prep.md` | Circuit Breaker · Bulkhead · Retry · Rate Limiting | 🔲 |
+| 023 | Kafka & Event-Driven `023_MOD3_Kafka_EventDriven_Interview_Prep.md` | Kafka · RabbitMQ · Outbox · Exactly-Once · DLQ | 🔲 |
+| 024 | Microservices Patterns `024_MOD3_Microservices_Patterns_Interview_Prep.md` | Saga · CQRS · Idempotency · Event Ordering | 🔲 |
+| 025 | Distributed Logging & Tracing `025_MOD3_Distributed_Logging_Tracing_Interview_Prep.md` | ELK · Zipkin · Sleuth · Correlation IDs | 🔲 |
 
 ---
 
 ## MODULE 4 — DATABASE 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `026_SQL_Advanced_Interview_Prep.md` | Indexes · Joins · Window Functions · CTE · Execution Plan | 🔲 |
-| `027_DB_Transactions_Interview_Prep.md` | Isolation Levels · Optimistic/Pessimistic Locking · ACID | 🔲 |
-| `028_DB_Performance_Interview_Prep.md` | Partitioning · Normalization · Denormalization · Tuning | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 026 | Advanced SQL `026_MOD4_SQL_Advanced_Interview_Prep.md` | Indexes · Joins · Window Functions · CTE · Execution Plan | 🔲 |
+| 027 | DB Transactions `027_MOD4_DB_Transactions_Interview_Prep.md` | Isolation Levels · Optimistic/Pessimistic Locking · ACID | 🔲 |
+| 028 | DB Performance `028_MOD4_DB_Performance_Interview_Prep.md` | Partitioning · Normalization · Denormalization · Tuning | 🔲 |
 
 ---
 
 ## MODULE 5 — ANGULAR 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `029_Angular_Core_Interview_Prep.md` | Components · Lifecycle · DI · Change Detection | 🔲 |
-| `030_Angular_RxJS_Interview_Prep.md` | Observables · Subjects · Signals · Operators | 🔲 |
-| `031_Angular_Advanced_Interview_Prep.md` | Routing · Lazy Loading · Forms · State Management | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 029 | Angular Core `029_MOD5_Angular_Core_Interview_Prep.md` | Components · Lifecycle · DI · Change Detection | 🔲 |
+| 030 | Angular RxJS `030_MOD5_Angular_RxJS_Interview_Prep.md` | Observables · Subjects · Signals · Operators | 🔲 |
+| 031 | Angular Advanced `031_MOD5_Angular_Advanced_Interview_Prep.md` | Routing · Lazy Loading · Forms · State Management | 🔲 |
 
 ---
 
 ## MODULE 6 — SYSTEM DESIGN 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `032_System_Design_HLD_Interview_Prep.md` | Scalability · Caching · Redis · Load Balancer · CDN · Rate Limiting | 🔲 |
-| `033_System_Design_LLD_Interview_Prep.md` | SOLID · Design Patterns · API Design · DB Design | 🔲 |
-| `034_System_Design_Real_Systems_Interview_Prep.md` | Uber · WhatsApp · Netflix · Payment · Order Management · Inventory · Notification | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 032 | System Design (HLD) `032_MOD6_System_Design_HLD_Interview_Prep.md` | Scalability · Caching · Redis · Load Balancer · CDN · Rate Limiting | 🔲 |
+| 033 | System Design (LLD) `033_MOD6_System_Design_LLD_Interview_Prep.md` | SOLID · Design Patterns · API Design · DB Design | 🔲 |
+| 034 | System Design — Real Systems `034_MOD6_System_Design_Real_Systems_Interview_Prep.md` | Uber · WhatsApp · Netflix · Payment · Order Management · Inventory · Notification | 🔲 |
 
 ---
 
 ## MODULE 7 — DEVOPS 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `035_Docker_Interview_Prep.md` | Dockerfile · Docker Compose · Networking | 🔲 |
-| `036_Kubernetes_Interview_Prep.md` | Pods · Deployments · Services · Ingress · ConfigMaps · Secrets | 🔲 |
-| `037_CICD_AWS_Interview_Prep.md` | Jenkins · GitHub Actions · EC2 · S3 · IAM · ECS · EKS · CloudWatch | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 035 | Docker `035_MOD7_Docker_Interview_Prep.md` | Dockerfile · Docker Compose · Networking | 🔲 |
+| 036 | Kubernetes `036_MOD7_Kubernetes_Interview_Prep.md` | Pods · Deployments · Services · Ingress · ConfigMaps · Secrets | 🔲 |
+| 037 | CI/CD & AWS `037_MOD7_CICD_AWS_Interview_Prep.md` | Jenkins · GitHub Actions · EC2 · S3 · IAM · ECS · EKS · CloudWatch | 🔲 |
 
 ---
 
 ## MODULE 8 — BEHAVIORAL 🔲
 
-| File | Topic | Status |
-|---|---|---|
-| `038_Behavioral_Interview_Prep.md` | STAR · Leadership · Conflict · Production Issues · Ownership · Mentoring | 🔲 |
+| # | Topic | Covers | Status |
+|---|---|---|---|
+| 038 | Behavioral `038_MOD8_Behavioral_Interview_Prep.md` | STAR · Leadership · Conflict · Production Issues · Ownership · Mentoring | 🔲 |
 
 ---
 
@@ -104,24 +104,24 @@
 
 | Priority | Question | File |
 |---|---|---|
-| 🔴 | HashMap internal working — hashing, treeification, resize | `005` → §4 Q9 |
-| 🔴 | ThreadLocal leak in pooled threads | `008` → §11 Q36 |
-| 🔴 | Why NOT to use `Executors` factory methods | `008` → §6 Q18 |
-| 🔴 | Pass by value — swap method proof | `001` → §6 Q27 |
-| 🔴 | equals()/hashCode() contract & HashSet identity bug | `005` → §9 Q23 |
-| 🔴 | Static/instance block + constructor execution order | `002` → §4 Q16 |
-| 🔴 | Exception chaining — never swallow the cause | `006` → §5 Q17 |
-| 🟠 | Static method hiding vs overriding output trap | `002` → §3 Q13 |
-| 🟠 | CompletableFuture silent exception swallow | `008` → §7 Q23 |
-| 🟠 | Fail-fast ConcurrentModificationException fix | `005` → §8 Q21 |
-| 🟠 | Fork/Join work-stealing mechanism | `008` → §12 Q42 |
-| 🟠 | LRU cache using LinkedHashMap | `005` → §6 Q17 |
-| 🟠 | String Pool vs `new String()` vs `intern()` | `003` → §3–4 |
-| 🟠 | PECS — Producer Extends, Consumer Super | `004` → §9 Q22–24 |
-| 🟠 | SOLID — DIP vs Dependency Injection | `012` → §7 Q22 |
-| 🟠 | Singleton double-checked locking + `volatile` | `013` → §1 Q4 |
-| 🟠 | `serialVersionUID` and why to declare it explicitly | `014` → §13 Q37 |
-| 🟠 | Virtual Threads vs Platform Threads | `011` → Q32 |
+| 🔴 | HashMap internal working — hashing, treeification, resize | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_MOD1_Collections_Framework_Interview_Prep.md) → §4 Q9 |
+| 🔴 | ThreadLocal leak in pooled threads | [008](https://github.com/KamaliyaVishal/Interview_QA/blob/main/008_MOD1_Multithreading_and_Concurrency_Interview_Prep.md) → §11 Q36 |
+| 🔴 | Why NOT to use `Executors` factory methods | [008](https://github.com/KamaliyaVishal/Interview_QA/blob/main/008_MOD1_Multithreading_and_Concurrency_Interview_Prep.md) → §6 Q18 |
+| 🔴 | Pass by value — swap method proof | [001](https://github.com/KamaliyaVishal/Interview_QA/blob/main/001_MOD1_Core_Java_Fundamentals_Interview_Prep.md) → §6 Q27 |
+| 🔴 | equals()/hashCode() contract & HashSet identity bug | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_MOD1_Collections_Framework_Interview_Prep.md) → §9 Q23 |
+| 🔴 | Static/instance block + constructor execution order | [002](https://github.com/KamaliyaVishal/Interview_QA/blob/main/002_MOD1_OOP_Interview_Prep.md) → §4 Q16 |
+| 🔴 | Exception chaining — never swallow the cause | [006](https://github.com/KamaliyaVishal/Interview_QA/blob/main/006_MOD1_Exception_Handling_Interview_Prep.md) → §5 Q17 |
+| 🟠 | Static method hiding vs overriding output trap | [002](https://github.com/KamaliyaVishal/Interview_QA/blob/main/002_MOD1_OOP_Interview_Prep.md) → §3 Q13 |
+| 🟠 | CompletableFuture silent exception swallow | [008](https://github.com/KamaliyaVishal/Interview_QA/blob/main/008_MOD1_Multithreading_and_Concurrency_Interview_Prep.md) → §7 Q23 |
+| 🟠 | Fail-fast ConcurrentModificationException fix | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_MOD1_Collections_Framework_Interview_Prep.md) → §8 Q21 |
+| 🟠 | Fork/Join work-stealing mechanism | [008](https://github.com/KamaliyaVishal/Interview_QA/blob/main/008_MOD1_Multithreading_and_Concurrency_Interview_Prep.md) → §12 Q42 |
+| 🟠 | LRU cache using LinkedHashMap | [005](https://github.com/KamaliyaVishal/Interview_QA/blob/main/005_MOD1_Collections_Framework_Interview_Prep.md) → §6 Q17 |
+| 🟠 | String Pool vs `new String()` vs `intern()` | [003](https://github.com/KamaliyaVishal/Interview_QA/blob/main/003_MOD1_String_Immutability_Interview_Prep.md) → §3–4 |
+| 🟠 | PECS — Producer Extends, Consumer Super | [004](https://github.com/KamaliyaVishal/Interview_QA/blob/main/004_MOD1_Generics_Interview_Prep.md) → §9 Q22–24 |
+| 🟠 | SOLID — DIP vs Dependency Injection | [012](https://github.com/KamaliyaVishal/Interview_QA/blob/main/012_MOD1_SOLID_Principles_Interview_Prep.md) → §7 Q22 |
+| 🟠 | Singleton double-checked locking + `volatile` | [013](https://github.com/KamaliyaVishal/Interview_QA/blob/main/013_MOD1_Design_Patterns_Interview_Prep.md) → §1 Q4 |
+| 🟠 | `serialVersionUID` and why to declare it explicitly | [014](https://github.com/KamaliyaVishal/Interview_QA/blob/main/014_MOD1_Reflection_Serialization_Interview_Prep.md) → §13 Q37 |
+| 🟠 | Virtual Threads vs Platform Threads | [011](https://github.com/KamaliyaVishal/Interview_QA/blob/main/011_MOD1_Java_9_26_Features_Interview_Prep.md) → Q32 |
 
 ---
 

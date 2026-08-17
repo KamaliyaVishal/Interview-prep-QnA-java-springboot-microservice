@@ -62,3 +62,17 @@
 | 005 | [Gateway & Service Discovery Architecture](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD4_005_Gateway_and_Service_Discovery_Architecture_Interview_Prep.md) | API Gateway · Service Discovery · Routing · Load Balancing |
 
 ---
+
+## ⚖️ MODULE 5 — DISTRIBUTED SYSTEMS ⚖️
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [CAP Theorem & Consistency Models](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_001_CAP_Theorem_Consistency_Models_Interview_Prep.md) | CAP Theorem · Consistency · Availability · Partition Tolerance |
+| 002 | [Network Failures & Distributed Challenges](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_002_Network_Failures_Distributed_Challenges_Interview_Prep.md) | Network Partitions · Timeouts · Partial Failures |
+| 003 | [Distributed Transactions & Consensus](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_003_Distributed_Transactions_Consensus_Interview_Prep.md) | 2PC · Consensus Algorithms · Raft · Paxos |
+| 004 | [Distributed Data Management](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_004_Distributed_Data_Management_Interview_Prep.md) | Sharding · Replication · Partitioning Strategies |
+| 005 | [Resilience & Fault Tolerance](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_005_Resilience_Fault_Tolerance_Interview_Prep.md) | Fault Tolerance · Failover · Redundancy |
+| 006 | [Distributed Caching](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_006_Distributed_Caching_Interview_Prep.md) | Cache Strategies · Redis · Consistency · Eviction |
+| 007 | [Distributed Messaging & Event-Driven Architecture](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_007_Distributed_Messaging_and_Event_Driven_Architecture_Interview_Prep.md) | Kafka · RabbitMQ · Event Streaming · Delivery Semantics |
+
+---

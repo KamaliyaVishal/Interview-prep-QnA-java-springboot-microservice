@@ -76,3 +76,14 @@
 | 007 | [Distributed Messaging & Event-Driven Architecture](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD5_007_Distributed_Messaging_and_Event_Driven_Architecture_Interview_Prep.md) | Kafka · RabbitMQ · Event Streaming · Delivery Semantics |
 
 ---
+
+## 📡 MODULE 6 — OBSERVABILITY & PRODUCTION ENGINEERING 📡
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [Observability Fundamentals](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD6_001_Observability_Fundamentals_Interview_Prep.md) | Logs · Metrics · Traces · Correlation IDs · Trace/Span ID |
+| 002 | [Monitoring & Alerting](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD6_002_Monitoring_Alerting_Interview_Prep.md) | Prometheus · Grafana · Micrometer · SLIs/SLOs/SLAs |
+| 003 | [JVM & Application Performance](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD6_003_JVM_Application_Performance_Interview_Prep.md) | Heap/Thread Dumps · GC Tuning · JFR/JMC · Memory Leaks |
+| 004 | [Production Troubleshooting](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD6_004_Production_Troubleshooting_Interview_Prep.md) | RCA · CPU/Memory Incidents · Kafka/Redis/K8s Debugging |
+
+---

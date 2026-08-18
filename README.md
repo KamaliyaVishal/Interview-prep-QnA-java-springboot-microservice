@@ -87,3 +87,18 @@
 | 004 | [Production Troubleshooting](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD6_004_Production_Troubleshooting_Interview_Prep.md) | RCA · CPU/Memory Incidents · Kafka/Redis/K8s Debugging |
 
 ---
+
+## ♾️ MODULE 7 — DEPLOYMENT & OPERATIONS ♾️
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [Docker](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_001_Docker_Interview_Prep.md) | Docker · Dockerfile · Images · Containers |
+| 002 | [Kubernetes Fundamentals](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_002_Kubernetes_Fundamentals_Interview_Prep.md) | Pods · Deployments · Services · ConfigMaps |
+| 003 | [Kubernetes Production](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_003_Kubernetes_Production_Interview_Prep.md) | Probes · Resource Limits · HPA · Rollouts · CrashLoopBackOff |
+| 004 | [Helm](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_004_Helm_Interview_Prep.md) | Charts · Templates · Values · Install/Upgrade/Rollback |
+| 005 | [CI/CD](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_005_CI_CD_Interview_Prep.md) | Pipelines · Build/Test/Package · Security Scanning · Jenkins/GitHub Actions |
+| 006 | [Deployment Strategies](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_006_Deployment_Strategies_Interview_Prep.md) | Rolling · Blue-Green · Canary · Feature Flags · Zero-Downtime |
+| 007 | [Service Mesh](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_007_Service_Mesh_Interview_Prep.md) | Istio · Sidecar · mTLS · Traffic Routing · Circuit Breaking |
+| 008 | [Cloud & Managed Services](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_008_Cloud_and_Managed_Services_Interview_Prep.md) | AWS · Azure · IAM · Secrets · Managed Services |
+
+---

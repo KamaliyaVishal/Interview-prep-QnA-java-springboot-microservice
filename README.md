@@ -77,7 +77,7 @@
 
 ---
 
-## 📡 MODULE 6 — OBSERVABILITY, PERFORMANCE & PRODUCTION 📡
+## 🔭 MODULE 6 — OBSERVABILITY, PERFORMANCE & PRODUCTION 🔭
 
 | # | Topic | Covers |
 |---|---|---|
@@ -100,5 +100,17 @@
 | 006 | [Deployment Strategies](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_006_Deployment_Strategies_Interview_Prep.md) | Rolling · Blue-Green · Canary · Feature Flags · Zero-Downtime |
 | 007 | [Service Mesh](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_007_Service_Mesh_Interview_Prep.md) | Istio · Sidecar · mTLS · Traffic Routing · Circuit Breaking |
 | 008 | [Cloud & Managed Services](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD7_008_Cloud_and_Managed_Services_Interview_Prep.md) | AWS · Azure · IAM · Secrets · Managed Services |
+
+---
+
+## 🔐 MODULE 8 — APPLICATION & MICROSERVICES SECURITY 🔐
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [Application Security](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD8_001_Application_Security_Interview_Prep.md) | OWASP Top 10 · Input Validation · SQL Injection · XSS · CSRF |
+| 002 | [Authentication & Authorization](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD8_002_Authentication_And_Authorization_Interview_Prep.md) | JWT · OAuth2 · OIDC · RBAC · Session Management |
+| 003 | [Cryptography](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD8_003_Cryptography_Interview_Prep.md) | Hashing vs Encryption · AES/RSA · SHA-256 · Digital Signatures · Key Management |
+| 004 | [Secrets & Security Operations](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD8_004_Secrets_Security_Operations_Interview_Prep.md) | Vault · Azure Key Vault · Secret Rotation · SAST/DAST · Vulnerability Scanning |
+| 005 | [Production Security](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD8_005_Production_Security_Interview_Prep.md) | Zero Trust · Least Privilege · API Gateway Security · Incident Handling |
 
 ---

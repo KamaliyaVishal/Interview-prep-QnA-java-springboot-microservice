@@ -77,7 +77,7 @@
 
 ---
 
-## 📡 MODULE 6 — OBSERVABILITY & PRODUCTION ENGINEERING 📡
+## 📡 MODULE 6 — OBSERVABILITY, PERFORMANCE & PRODUCTION 📡
 
 | # | Topic | Covers |
 |---|---|---|

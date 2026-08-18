@@ -114,3 +114,15 @@
 | 005 | [Production Security](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD8_005_Production_Security_Interview_Prep.md) | Zero Trust · Least Privilege · API Gateway Security · Incident Handling |
 
 ---
+
+## 🎡️ MODULE 9 — ARCHITECTURE & SYSTEM DESIGN 🎡
+
+| # | Topic | Covers |
+|---|---|---|
+| 001 | [Architecture Patterns](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD9_001_Architecture_Patterns_Interview_Prep.md) | Layered · Hexagonal · Event-Driven · CQRS · Monolith vs Microservices |
+| 002 | [Scalability & Availability](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD9_002_Scalability_Availability_Interview_Prep.md) | Horizontal/Vertical Scaling · High Availability · Redundancy · Load Distribution |
+| 003 | [System Design Process](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD9_003_System_Design_Process_Interview_Prep.md) | Requirements Gathering · Capacity Estimation · Trade-off Analysis · Interview Framework |
+| 004 | [Common System Design Problems](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD9_004_Common_System_Design_Problems_Interview_Prep.md) | URL Shortener · Rate Limiter · News Feed · Chat System · Notification System |
+| 005 | [Design Trade-offs](https://github.com/KamaliyaVishal/Interview_QA/blob/main/MOD9_005_Design_Trade_offs_Interview_Prep.md) | Consistency vs Availability · Latency vs Throughput · SQL vs NoSQL · Push vs Pull |
+
+---
